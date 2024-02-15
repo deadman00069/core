@@ -12,6 +12,15 @@ android {
     buildFeatures {
         buildConfig = true
     }
+
+    publishing {
+        publishing {
+            singleVariant("release") {
+                withSourcesJar()
+                withJavadocJar()
+            }
+        }
+    }
 }
 
 dependencies {

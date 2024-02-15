@@ -49,9 +49,8 @@ class MainGradlePlugin : Plugin<Project> {
             }
 
             compileOptions {
-                sourceCompatibility = JavaVersion.VERSION_1_8
-                targetCompatibility = JavaVersion.VERSION_1_8
-
+                sourceCompatibility = JavaVersion.VERSION_18
+                targetCompatibility = JavaVersion.VERSION_18
             }
         }
     }
