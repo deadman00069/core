@@ -1,6 +1,5 @@
 jdk:
-  - openjdk18
-
+  - openjdk17
 before_install:
-  - sdk install java 18
-  - sdk use java 18
+  - sdk install java 17.0.9-oracle
+  - sdk use java java 17.0.9-oracle

@@ -13,6 +13,7 @@ android {
         buildConfig = true
     }
 
+
     publishing {
         publishing {
             singleVariant("release") {
@@ -42,7 +43,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.deadman00069"
             artifactId = "core"
-            version = "2.0.4"
+            version = "2.0.6"
             afterEvaluate {
                 from(components["release"])
             }
