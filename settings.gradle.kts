@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "MobileQuickLaunchKit"
 include(":core")
+include(":utility")

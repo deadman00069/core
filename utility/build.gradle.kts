@@ -1,20 +1,17 @@
+
 plugins {
     `android-library`
     `kotlin-android`
-    id("com.google.dagger.hilt.android")
-    id("kotlin-kapt")
     id("maven-publish")
 }
 
 apply<MainGradlePlugin>()
 
 android {
-    namespace = "com.foss.core"
-
+    namespace = "com.foss.utility"
     buildFeatures {
         buildConfig = true
     }
-
 
     publishing {
         publishing {
@@ -27,24 +24,16 @@ android {
 }
 
 dependencies {
-
-    //Need below three in every module
+    implementation("androidx.annotation:annotation-jvm:1.7.1")
     Dependencies.coreKtx
     Dependencies.appCompat
-    hilt()
-    hiltTesting()
-    retrofit()
-    timber()
-    dataStore()
-    moshi()
-
 }
 
 publishing {
     publications {
         register<MavenPublication>("release") {
             groupId = "com.github.deadman00069"
-            artifactId = "core"
+            artifactId = "utility"
             version = "2.0.8"
             afterEvaluate {
                 from(components["release"])
