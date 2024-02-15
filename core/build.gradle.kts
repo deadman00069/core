@@ -43,7 +43,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.deadman00069"
             artifactId = "core"
-            version = "2.0.6"
+            version = "2.0.7"
             afterEvaluate {
                 from(components["release"])
             }
