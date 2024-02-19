@@ -75,7 +75,7 @@ object Dependencies {
 
     const val firebaseAuth = "com.google.firebase:firebase-auth:22.3.0"
     const val playServicesAuth = "com.google.android.gms:play-services-auth:20.7.0"
-    const val biometrics = "androidx.biometric:biometric:1.2.0-alpha05"
+    const val biometrics = "androidx.biometric:biometric:1.1.0"
     const val dataStore = "androidx.datastore:datastore-preferences:1.0.0-alpha01"
 }
 

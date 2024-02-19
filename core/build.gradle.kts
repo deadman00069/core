@@ -14,16 +14,6 @@ android {
     buildFeatures {
         buildConfig = true
     }
-
-
-    publishing {
-        publishing {
-            singleVariant("release") {
-                withSourcesJar()
-                withJavadocJar()
-            }
-        }
-    }
 }
 
 dependencies {
@@ -45,7 +35,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.deadman00069"
             artifactId = "core"
-            version = "2.0.8"
+            version = PublishingConfig.coreVersion
             afterEvaluate {
                 from(components["release"])
             }

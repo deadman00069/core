@@ -11,3 +11,12 @@ buildscript {
     }
 }
 
+subprojects {
+    tasks.matching { task ->
+        task.name.contains("javaDocReleaseGeneration", ignoreCase = true)
+    }.configureEach {
+        enabled = false
+    }
+
+}
+

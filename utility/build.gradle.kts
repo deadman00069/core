@@ -1,4 +1,3 @@
-
 plugins {
     `android-library`
     `kotlin-android`
@@ -11,15 +10,6 @@ android {
     namespace = "com.foss.utility"
     buildFeatures {
         buildConfig = true
-    }
-
-    publishing {
-        publishing {
-            singleVariant("release") {
-                withSourcesJar()
-                withJavadocJar()
-            }
-        }
     }
 }
 
