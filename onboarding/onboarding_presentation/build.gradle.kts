@@ -4,6 +4,7 @@ plugins {
     `kotlin-android`
     id("com.google.dagger.hilt.android")
     id("kotlin-kapt")
+    id("maven-publish")
 }
 
 apply<MainGradlePlugin>()
@@ -32,4 +33,17 @@ dependencies {
     authDomain()
     shared()
 
+}
+
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.github.deadman00069"
+            artifactId = "onboarding_presentation"
+            version = PublishingConfig.onboardingVersion
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
+    }
 }

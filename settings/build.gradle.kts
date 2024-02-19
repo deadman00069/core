@@ -4,6 +4,7 @@ plugins {
     `kotlin-android`
     id("com.google.dagger.hilt.android")
     id("kotlin-kapt")
+    id("maven-publish")
 }
 apply<MainGradlePlugin>()
 
@@ -35,7 +36,18 @@ dependencies {
     retrofit()
     firebase()
     timber()
-
-
-
 }
+
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.github.deadman00069"
+            artifactId = "settings"
+            version = PublishingConfig.settingsVersion
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
+    }
+}
+

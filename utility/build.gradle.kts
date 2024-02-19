@@ -24,7 +24,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.deadman00069"
             artifactId = "utility"
-            version = "2.0.8"
+            version = PublishingConfig.utilityVersion
             afterEvaluate {
                 from(components["release"])
             }
