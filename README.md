@@ -74,10 +74,10 @@ a specific purpose.
    Replace `<MODULE_NAME>` with the name of the specific library you need and `<VERSION>` with the version number.
 
 3. **Hilt Setup:**
-    - Follow the instructions provided in `./docs/hilt_setup.md` to configure Hilt dependency injection in your project.
+    - Follow the instructions provided [here](./docs/hilt_setup.md) to configure Hilt dependency injection in your project.
 
 4. **Firebase Setup:**
-    - Integrate Firebase into your project by following the steps in `./docs/firebase_setup.md`. This is required for Google Sign-in functionality.
+    - Integrate Firebase into your project by following the steps [here](./docs/firebase_setup.md). This is required for Google Sign-in functionality.
 
 5. **Compose Version:**
     - Update your `build.gradle` file with the following Compose dependencies:
