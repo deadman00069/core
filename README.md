@@ -34,9 +34,9 @@ a specific purpose.
 
 ### Prerequisites
 
-**Software Requirements:**
+**Software Requirement:**
 
-- **Android Studio:** Install the latest version (3.0.1 or later) of Android Studio from the official website: [https://developer.android.com/studio](https://developer.android.com/studio).
+- **Android Studio App:** Install the latest version (3.0.1 or later) of Android Studio from the official website: [https://developer.android.com/studio](https://developer.android.com/studio).
 
 **Configuration:**
 
